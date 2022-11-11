@@ -70,3 +70,8 @@ Java虚拟机的启动是通过引导类加载器（bootstrap classloader）创�
 程序开始执行时，JVM才会运行，程序结束时，JVM就停止
 执行一个所谓的Java程序，其实正在执行的是一个叫做Java虚拟机的进程
 结束：
+1.程序正常执行结束
+2.程序在执行过程中遇到了一场或错误而异常终止
+3.由于操作系统出现错误而导致Java虚拟机进程终止
+4.某线程调用Runtime类或者System类的exit方法，或Runtime类的half方法，并且Java安全管理器也允许这次exit或half操作
+5.JNI规范描述了用JNI Invocation API来加载或卸载Java虚拟机时，Java虚拟机退出的情况
