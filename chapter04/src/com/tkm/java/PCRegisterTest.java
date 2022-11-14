@@ -1,6 +1,6 @@
 package com.tkm.java;
 
-public class PCRegister {
+public class PCRegisterTest {
     /*
         指令地址（偏移地址）：操作指令
          0: bipush        10
