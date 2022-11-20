@@ -30,7 +30,7 @@ public class LocalVariablesTest {
         test.test1();
     }
 
-    //  联系
+    //  练习
     public static void testStatic() {
         LocalVariablesTest test = new LocalVariablesTest();
         Date date = new Date();
