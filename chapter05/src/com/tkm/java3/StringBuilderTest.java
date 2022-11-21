@@ -30,4 +30,13 @@ public class StringBuilderTest {
         sb.append(2);
         return sb;
     }
+
+    //  StringBuilder仍然未逃离方法的作用域，为线程安全的
+    public static String method4() {
+        StringBuilder sb = new StringBuilder();
+        sb.append(1);
+        sb.append(2);
+        //  本质为new String
+        return sb.toString();
+    }
 }
