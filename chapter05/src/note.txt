@@ -232,7 +232,7 @@ java.lang.IllegalAccessError：
 4.垃圾回收是否会涉及到虚拟机栈？
 不涉及
 程序计数器：不存在Error，也不存在GC
-虚拟机栈/本地方法栈：存在Error（StackOverflow、OOM），不存在GC
+虚拟机栈/本地方法栈：存在Error（SOF、OOM），不存在GC
 堆：存在Error（OOM）、存在GC
 方法区：存在Error（OOM）。存在GC
 

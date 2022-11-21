@@ -1,0 +1,6 @@
+本地方法接口：
+
+什么是本地方法：
+一个Native Method就是一个Java调用非Java代码的接口，一个Native Method是这样一个Java方法，该方法由非Java语言实现，比如：C/C++。
+在定义一个Native Method时，并不提供实现体，因为其实现体是由非Java语言在外面实现的。
+本地接口的作用是融合不同的编程语言为Java所用，它的初中是融合C/C++程序。
