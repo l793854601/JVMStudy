@@ -1,5 +1,25 @@
 package com.tkm.java;
 
+/*
+    -XX:+PrintGCDetails：打印GC日志
+
+    JDK1.8情况下：
+    Heap
+        //  年轻代
+        PSYoungGen      total 76288K, used 3932K [0x000000076ab00000, 0x0000000770000000, 0x00000007c0000000)
+            //  Eden区
+            eden space 65536K, 6% used [0x000000076ab00000,0x000000076aed7240,0x000000076eb00000)
+            //  S0区
+            from space 10752K, 0% used [0x000000076f580000,0x000000076f580000,0x0000000770000000)
+            //  S1区
+            to   space 10752K, 0% used [0x000000076eb00000,0x000000076eb00000,0x000000076f580000)
+        //  老年代
+        ParOldGen       total 175104K, used 0K [0x00000006c0000000, 0x00000006cab00000, 0x000000076ab00000)
+            object space 175104K, 0% used [0x00000006c0000000,0x00000006c0000000,0x00000006cab00000)
+        //  元空间（JDK1.7及之前为PsPermGen，也就是永久代）
+        Metaspace       used 3199K, capacity 4496K, committed 4864K, reserved 1056768K
+            class space    used 342K, capacity 388K, committed 512K, reserved 1048576K
+ */
 public class SimpleHeap {
     private int id;
 

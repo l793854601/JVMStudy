@@ -1,7 +1,8 @@
 package com.tkm.java;
 
 /*
-    -Xms10m -Xmx10m
+    -Xms10m
+    -Xmx10m
  */
 public class HeapDemo {
     public static void main(String[] args) {
