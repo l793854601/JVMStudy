@@ -61,6 +61,7 @@ java.lang.OutOfMemoryError: Java heap space
 总结：
 1.针对S0、S1区的总结：复制之后有交换，谁空谁是to
 2.关于垃圾回收：频繁在新生区收集，很少在养老区收集，几乎不在永久区/元空间收集
+3.from、to区：from区是接受从Eden区回收不掉的对象
 
 
 
