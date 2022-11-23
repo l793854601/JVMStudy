@@ -22,5 +22,11 @@ public class HeapSpaceInitial {
         System.out.println("-Xmx: " + maxMemory + "M");
         System.out.println("系统内存：" + initialMemory * 64.0 / 1024 + "G");
         System.out.println("系统内存：" + maxMemory * 4.0 / 1024 + "G");
+
+        try {
+            Thread.sleep(10000000L);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
