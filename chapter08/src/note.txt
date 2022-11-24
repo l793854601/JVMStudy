@@ -173,7 +173,7 @@ TLAB的再说明：
 
 JDK6 Update24（JDK7）之后，HandlePromotionFailure不会再影响到虚拟机的空间分配担保策略，规则变为：
 只要老年代的连续空间大于新生代对象总大小或者历次晋升的平均大小就会进行Minor GC，否则将进行Full GC
-
+相当于JDK7及以后，HandlePromotionFailure=true
 
 
 
