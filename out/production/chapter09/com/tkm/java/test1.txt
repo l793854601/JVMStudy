@@ -1,0 +1,128 @@
+Classfile /Users/liudelong/Desktop/projects/java/JVMStudy/out/production/chapter09/com/tkm/java/Order.class
+  Last modified 2022年11月28日; size 760 bytes
+  SHA-256 checksum 85c0dd70f46d1818942e087ea552169581962fd8610af0a83b36e6d3e496e53b
+  Compiled from "MethodAreaTest.java"
+class com.tkm.java.Order
+  minor version: 0
+  major version: 52
+  flags: (0x0020) ACC_SUPER
+  this_class: #10                         // com/tkm/java/Order
+  super_class: #11                        // java/lang/Object
+  interfaces: 0, fields: 4, methods: 3, attributes: 1
+Constant pool:
+   #1 = Methodref          #11.#32        // java/lang/Object."<init>":()V
+   #2 = Fieldref           #10.#33        // com/tkm/java/Order.fieldValue:I
+   #3 = Fieldref           #34.#35        // java/lang/System.out:Ljava/io/PrintStream;
+   #4 = String             #36            // Hello!
+   #5 = Methodref          #37.#38        // java/io/PrintStream.println:(Ljava/lang/String;)V
+   #6 = Fieldref           #10.#39        // com/tkm/java/Order.count:I
+   #7 = Class              #40            // java/lang/StringBuilder
+   #8 = Methodref          #7.#32         // java/lang/StringBuilder."<init>":()V
+   #9 = Fieldref           #10.#41        // com/tkm/java/Order.sb:Ljava/lang/StringBuilder;
+  #10 = Class              #42            // com/tkm/java/Order
+  #11 = Class              #43            // java/lang/Object
+  #12 = Utf8               count
+  #13 = Utf8               I
+  #14 = Utf8               number
+  #15 = Utf8               ConstantValue
+  #16 = Integer            2
+  #17 = Utf8               fieldValue
+  #18 = Integer            10
+  #19 = Utf8               sb
+  #20 = Utf8               Ljava/lang/StringBuilder;
+  #21 = Utf8               <init>
+  #22 = Utf8               ()V
+  #23 = Utf8               Code
+  #24 = Utf8               LineNumberTable
+  #25 = Utf8               LocalVariableTable
+  #26 = Utf8               this
+  #27 = Utf8               Lcom/tkm/java/Order;
+  #28 = Utf8               hello
+  #29 = Utf8               <clinit>
+  #30 = Utf8               SourceFile
+  #31 = Utf8               MethodAreaTest.java
+  #32 = NameAndType        #21:#22        // "<init>":()V
+  #33 = NameAndType        #17:#13        // fieldValue:I
+  #34 = Class              #44            // java/lang/System
+  #35 = NameAndType        #45:#46        // out:Ljava/io/PrintStream;
+  #36 = Utf8               Hello!
+  #37 = Class              #47            // java/io/PrintStream
+  #38 = NameAndType        #48:#49        // println:(Ljava/lang/String;)V
+  #39 = NameAndType        #12:#13        // count:I
+  #40 = Utf8               java/lang/StringBuilder
+  #41 = NameAndType        #19:#20        // sb:Ljava/lang/StringBuilder;
+  #42 = Utf8               com/tkm/java/Order
+  #43 = Utf8               java/lang/Object
+  #44 = Utf8               java/lang/System
+  #45 = Utf8               out
+  #46 = Utf8               Ljava/io/PrintStream;
+  #47 = Utf8               java/io/PrintStream
+  #48 = Utf8               println
+  #49 = Utf8               (Ljava/lang/String;)V
+{
+  public static int count;
+    descriptor: I
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+
+  public static final int number;
+    descriptor: I
+    flags: (0x0019) ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+    ConstantValue: int 2
+
+  public final int fieldValue;
+    descriptor: I
+    flags: (0x0011) ACC_PUBLIC, ACC_FINAL
+    ConstantValue: int 10
+
+  public static final java.lang.StringBuilder sb;
+    descriptor: Ljava/lang/StringBuilder;
+    flags: (0x0019) ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+
+  com.tkm.java.Order();
+    descriptor: ()V
+    flags: (0x0000)
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: bipush        10
+         7: putfield      #2                  // Field fieldValue:I
+        10: return
+      LineNumberTable:
+        line 26: 0
+        line 44: 4
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      11     0  this   Lcom/tkm/java/Order;
+
+  public static void hello();
+    descriptor: ()V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=0, args_size=0
+         0: getstatic     #3                  // Field java/lang/System.out:Ljava/io/PrintStream;
+         3: ldc           #4                  // String Hello!
+         5: invokevirtual #5                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+         8: return
+      LineNumberTable:
+        line 49: 0
+        line 50: 8
+
+  static {};
+    descriptor: ()V
+    flags: (0x0008) ACC_STATIC
+    Code:
+      stack=2, locals=0, args_size=0
+         0: iconst_1
+         1: putstatic     #6                  // Field count:I
+         4: new           #7                  // class java/lang/StringBuilder
+         7: dup
+         8: invokespecial #8                  // Method java/lang/StringBuilder."<init>":()V
+        11: putstatic     #9                  // Field sb:Ljava/lang/StringBuilder;
+        14: return
+      LineNumberTable:
+        line 32: 0
+        line 46: 4
+}
+SourceFile: "MethodAreaTest.java"
