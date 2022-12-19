@@ -1,4 +1,4 @@
-package com.tkm.java;
+package com.tkm.java2;
 
 /*
     测试对象实例化的过程：
